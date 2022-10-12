@@ -1,0 +1,136 @@
+:root{
+    --shadow-color-primary:  #62ccfb;
+    --background-color-primary: #e1e2e7;
+    --background-color-secondary: #fff;
+    --text-color: #000;
+    --primary-shadow-color: #2228;
+    --secondary-shadow-color: #fff000;
+    --button-color-primary: #02b7ff;
+    --box-shadow-color: #888888e7;
+    --max-width-container: 1200px;
+    --padding-section: 5rem 0 0;
+    --padding-container: 0 2em;
+    --border-radius: 0.5rem;
+    --all-transitions: all 0.25s;
+    
+}
+
+
+.body-login{
+    font-family: "Poppins", sans-serif;
+    height: 100vh;
+    background-image: url(https://th.bing.com/th/id/R.238d7eeadabc5c7099f9c494cc90c71e?rik=iTP4tvSAKFB%2bzQ&riu=http%3a%2f%2fhausarzt-zeier.de%2ffiles%2fvision%2fimg%2fheader%2fhome1.jpg&ehk=2ycCp4Gaebfx3vR23woK1lN%2f0XVJAblJox5vKtvKhLI%3d&risl=&pid=ImgRaw&r=0);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+      
+  /* STRUCTURE */
+  
+  .wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+    justify-content: center;
+    width: 100%;
+    min-height: 100%;
+    padding: 20px;
+  }
+  
+  #formContent {
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+    background: #fff;
+    padding: 30px;
+    width: 90%;
+    max-width: 450px;
+    position: relative;
+    padding: 0px;
+    -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+    box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+    text-align: center;
+  }
+  .form__logo{
+    display: flex;
+    justify-content: center;
+    padding: 0 20px;
+  }
+  .form__logo-image{
+    width: 80%;
+    transition: var(--all-transitions);
+  }
+  .form__logo-image:hover{
+    box-shadow: 0 0 0.50rem 0 var(--shadow-color-primary),
+    0 0 0.75rem var(--shadow-color-primary);
+  }
+  .login__container{
+    display: flex;
+    justify-content: center;
+  }
+  .login{
+    font-weight: 800;
+  }  
+  
+  #formFooter {
+    background-color: #f6f6f6;
+    border-top: 1px solid #dce8f1;
+    padding: 25px;
+    text-align: center;
+    -webkit-border-radius: 0 0 10px 10px;
+    border-radius: 0 0 10px 10px;
+  }  
+  
+  .modal-body{
+    font-weight: 700;
+  }
+  /* FORM TYPOGRAPHY*/
+  
+  input[type=button], input[type=submit], input[type=reset]  {
+    background-color: #56baed;
+    border: none;
+    color: white;
+    padding: 15px 80px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 13px;
+    -webkit-box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
+    box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+    margin: 5px 20px 40px 20px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover  {
+    background-color: #39ace7;
+  }
+  
+  input[type=button]:active, input[type=submit]:active, input[type=reset]:active  {
+    -moz-transform: scale(0.95);
+    -webkit-transform: scale(0.95);
+    -o-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    transform: scale(0.95);
+  }
+  
+  
+  
+  input[type=text]:focus {
+    background-color: #fff;
+    border-bottom: 2px solid #5fbae9;
+  }
+  
+  input[type=text]:placeholder {
+    color: #cccccc;
+  }
+  @media (max-width:370px){
+    input[type=button], input[type=submit], input[type=reset]  {
+      padding: 15px 5px;
+    }
+  }
+  
